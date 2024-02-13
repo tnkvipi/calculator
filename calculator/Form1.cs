@@ -33,11 +33,11 @@ namespace calculator
                 n2 = false;
                 textBox1.Text = "0";
             }
-            Button B = (Button)sender;
+            Button button = (Button)sender;
             if (textBox1.Text == "0")
-                textBox1.Text = B.Text;
+                textBox1.Text = button.Text;
             else
-                textBox1.Text = textBox1.Text + B.Text;
+                textBox1.Text = textBox1.Text + button.Text;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -47,8 +47,8 @@ namespace calculator
 
         private void button20_Click(object sender, EventArgs e)
         {
-            Button B = (Button)sender;
-            D = B.Text;
+            Button button = (Button)sender;
+            D = button.Text;
             n1 = textBox1.Text;
             n2 = true;
         }
