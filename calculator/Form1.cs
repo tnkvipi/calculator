@@ -13,7 +13,7 @@ namespace calculator
     public partial class Form1 : Form
     {
         public string action;
-        public string n1;
+        public string selected value1;
         public bool n2;
         public Form1()
         {
@@ -49,7 +49,7 @@ namespace calculator
         {
             Button button = (Button)sender;
             action = button.Text;
-            n1 = textBox1.Text;
+            selected value1 = textBox1.Text;
             n2 = true;
         }
 
@@ -57,7 +57,7 @@ namespace calculator
         {
             double c, c1, res;
             res = 0;
-            c = Convert.ToDouble(n1);
+            c = Convert.ToDouble(selected value1);
             c1 = Convert.ToDouble(textBox1.Text);
             if (action == "+")
             {
@@ -67,7 +67,7 @@ namespace calculator
             {
                 res = c - c1;
             }
-            if (D == "*")
+            if (action == "*")
             {
                 res = c * c1;
             }
