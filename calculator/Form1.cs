@@ -14,10 +14,10 @@ namespace calculator
     {
         public string action;
         public string selected value1;
-        public bool n2;
+        public bool selected value2;
         public Form1()
         {
-            n2 = false;
+            selected value2 = false;
             InitializeComponent();
         }
 
@@ -28,9 +28,9 @@ namespace calculator
 
         private void button15_Click(object sender, EventArgs e)
         {
-            if (n2)
+            if (selected value2)
             {
-                n2 = false;
+                selected value2 = false;
                 textBox1.Text = "0";
             }
             Button button = (Button)sender;
@@ -50,7 +50,7 @@ namespace calculator
             Button button = (Button)sender;
             action = button.Text;
             selected value1 = textBox1.Text;
-            n2 = true;
+            selected value2 = true;
         }
 
         private void button24_Click(object sender, EventArgs e)
@@ -80,7 +80,7 @@ namespace calculator
                 res = c1 * c / 100;
             }
             action = "=";
-            n2 = true;
+            selected value2 = true;
             textBox1.Text = res.ToString();
         }
 
