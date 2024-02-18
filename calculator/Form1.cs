@@ -55,29 +55,29 @@ namespace calculator
 
         private void button24_Click(object sender, EventArgs e)
         {
-            double stores the value1, c1, res;
+            double stores the value1, stores the value2, res;
             res = 0;
             stores the value1 = Convert.ToDouble(selected value1);
-            c1 = Convert.ToDouble(textBox1.Text);
+            stores the value2 = Convert.ToDouble(textBox1.Text);
             if (action == "+")
             {
-                res = stores the value1 + c1;
+                res = stores the value1 + stores the value2;
             }
             if (action == "-")
             {
-                res = stores the value1 - c1;
+                res = stores the value1 - stores the value2;
             }
             if (action == "*")
             {
-                res = stores the value1 * c1;
+                res = stores the value1 * stores the value2;
             }
             if (action == "/")
             {
-                res = stores the value1 / c1;
+                res = stores the value1 / stores the value2;
             }
             if (action == "%")
             {
-                res = c1 * stores the value1 / 100;
+                res = stores the value2 * stores the value1 / 100;
             }
             action = "=";
             selected value2 = true;
