@@ -55,65 +55,65 @@ namespace calculator
 
         private void button24_Click(object sender, EventArgs e)
         {
-            double stores the value1, stores the value2, res;
-            res = 0;
+            double stores the value1, stores the value2, result;
+            result = 0;
             stores the value1 = Convert.ToDouble(selected value1);
             stores the value2 = Convert.ToDouble(textBox1.Text);
             if (action == "+")
             {
-                res = stores the value1 + stores the value2;
+                result = stores the value1 + stores the value2;
             }
             if (action == "-")
             {
-                res = stores the value1 - stores the value2;
+                result = stores the value1 - stores the value2;
             }
             if (action == "*")
             {
-                res = stores the value1 * stores the value2;
+                result = stores the value1 * stores the value2;
             }
             if (action == "/")
             {
-                res = stores the value1 / stores the value2;
+                result = stores the value1 / stores the value2;
             }
             if (action == "%")
             {
-                res = stores the value2 * stores the value1 / 100;
+                result = stores the value2 * stores the value1 / 100;
             }
             action = "=";
             selected value2 = true;
-            textBox1.Text = res.ToString();
+            textBox1.Text = result.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double stores the value1, res;
+            double stores the value1, result;
             stores the value1 = Convert.ToDouble(textBox1.Text);
-            res = Math.Sqrt(stores the value1);
-            textBox1.Text = res.ToString();
+            result = Math.Sqrt(stores the value1);
+            textBox1.Text = result.ToString();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            double stores the value1, res;
+            double stores the value1, result;
             stores the value1 = Convert.ToDouble(textBox1.Text);
-            res = Math.Pow(stores the value1, 2);
-            textBox1.Text = res.ToString();
+            result = Math.Pow(stores the value1, 2);
+            textBox1.Text = result.ToString();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            double stores the value1, res;
+            double stores the value1, result;
             stores the value1 = Convert.ToDouble(textBox1.Text);
-            res = 1 / stores the value1;
-            textBox1.Text = res.ToString();
+            result = 1 / stores the value1;
+            textBox1.Text = result.ToString();
         }
 
         private void button21_Click(object sender, EventArgs e)
         {
-            double stores the value1, res;
+            double stores the value1, result;
             stores the value1 = Convert.ToDouble(textBox1.Text);
-            res = -stores the value1;
-            textBox1.Text = res.ToString();
+            result = -stores the value1;
+            textBox1.Text = result.ToString();
         }
 
         private void button23_Click(object sender, EventArgs e)
